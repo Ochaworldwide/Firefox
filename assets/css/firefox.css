@@ -1,0 +1,278 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 45%;
+    height: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img{
+    width: 35%;
+    height: 150px;
+    background-image: url("../images/firefox.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    font-size: 70px;
+    font-weight: lighter
+}
+
+
+
+/* Search section */
+
+
+
+.search{
+    width: 55%;
+    height: 55px;
+    background-color: #a6a6a6;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #a6a6a6;
+    margin-top: 2%;
+}
+.icon{
+    width: 7%;
+    height: 40px;
+    background-size: contain;
+    background-image: url("../images/google.png");
+    background-repeat: no-repeat;
+    margin-left: 1%;
+}
+input{
+    height: 40px;
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+
+/* recent Section */
+
+
+.recent{
+    margin-top: 6%;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.recent_parts{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.recent_icon{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(161, 161, 161, 0.533);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.xender{
+    width: 60%;
+    height: 78%;
+    font-size: 10px;
+    background-size: cover;
+    background-position: center;
+
+}
+#figma{
+    background-image: url("../images/figma.png");
+}
+
+#xender{
+    width: 90%;
+    height: 60%;
+    background-image: url("../images/xender.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#google{
+    background-image: url("../images/google.png");
+}
+
+#whatsapp{
+    background-image: url("../images/whatsapp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#facebook{
+    background-image: url("../images/facebook.png");
+}
+
+#twitter{
+    background-image: url("../images/twitter.png");
+    background-size: contain;
+    height: 65%;
+    background-repeat: no-repeat;
+}
+
+.recent_icon_name{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+
+
+/* Responsive Section */
+
+@media only screen and (max-width:550px) and (min-width:0px){
+    .img{
+        height: 40px;
+        background-position: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+
+
+    .search{
+        height: auto;
+        width: 90%;
+
+    }
+    .icon{
+        width: 11%;
+        background-size: contain;
+        background-position: center;
+        height: 25px;
+    }
+    input{
+        font-size: 12px;
+    }
+    
+
+    .recent{
+        
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 100% 100% 100%;
+    }
+    .recent_parts{
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+
+    .recent_icon_name{
+        font-size: 10px;
+    }
+    #figma{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #google{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #twitter{
+        background-position: center;
+
+    }
+    #facebook{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    
+}
+
+
+
+
+/* Tablets */
+
+@media only screen and (max-width:1000px) and (min-width:550px){
+    .img{
+        height: 55px;
+        background-position: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+
+
+    .search{
+        height: auto;
+        width: 90%;
+
+    }
+    .icon{
+        width: 11%;
+        background-size: contain;
+        background-position: center;
+        height: 25px;
+    }
+    input{
+        font-size: 12px;
+    }
+    
+
+    .recent{
+        
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 100% 100% 100%;
+    }
+    .recent_parts{
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+
+    .recent_icon_name{
+        font-size: 10px;
+    }
+    #figma{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #google{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #twitter{
+        background-position: center;
+
+    }
+    #facebook{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    
+}
